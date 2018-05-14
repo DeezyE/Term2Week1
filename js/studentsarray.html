@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      const studArray = [];
+      let name;
+      let age;
+      for (let i = 0; i < 3; i++) {
+        studArray.push(name = prompt("Enter student name", "Name.."));
+        studArray.push(age = prompt("Enter age", "Age.."));
+
+        studArray.push({name, age});
+      }
+      for (let student in studArray) {
+        alert(student)
+      }
+
+    </script>
+  </body>
+</html>
